@@ -1,0 +1,66 @@
+================================================================================
+HOW TO EXECUTE SQL SCRIPT IN MYSQL WORKBENCH
+================================================================================
+
+METHOD 1: Keyboard Shortcut (EASIEST)
+--------------------------------------
+1. Make sure the SQL editor tab is active (click on it)
+2. Press: Ctrl+Shift+Enter
+   OR
+   Press: Ctrl+Enter
+   
+This will execute the entire script!
+
+================================================================================
+
+METHOD 2: Right-Click Menu
+---------------------------
+1. Select all the SQL code (Ctrl+A)
+2. Right-click on the selected code
+3. Click "Execute (All or Selection)"
+
+================================================================================
+
+METHOD 3: Menu Bar
+-------------------
+1. Click on "Query" menu at the top
+2. Click "Execute (All or Selection)"
+   OR
+   Press the keyboard shortcut shown next to it
+
+================================================================================
+
+METHOD 4: Toolbar Button
+------------------------
+Look for these icons in the toolbar (below the menu bar):
+- Lightning bolt icon (⚡) - Execute
+- Folder with document icon - Open Script
+- Green play button - Execute
+
+If you don't see the lightning bolt:
+1. Go to: View > Toolbars
+2. Make sure "SQL Editor" toolbar is checked
+
+================================================================================
+
+METHOD 5: Connect First (IMPORTANT!)
+-------------------------------------
+If the Execute button is grayed out, you might not be connected!
+
+1. Look at the top of MySQL Workbench
+2. Find "MySQL Connections" section
+3. Click on your connection (or create one)
+4. Enter your MySQL root password
+5. Once connected, the Execute button should work
+
+================================================================================
+
+QUICK STEPS:
+------------
+1. Connect to MySQL (if not connected)
+2. Make sure schema.sql is open in the SQL editor
+3. Press Ctrl+Shift+Enter
+4. Check the Output panel at the bottom for success messages
+
+================================================================================
+

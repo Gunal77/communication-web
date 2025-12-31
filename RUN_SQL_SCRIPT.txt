@@ -1,0 +1,48 @@
+================================================================================
+HOW TO RUN THE DATABASE SCRIPT IN MYSQL WORKBENCH
+================================================================================
+
+METHOD 1: Using File Menu (RECOMMENDED)
+----------------------------------------
+1. In MySQL Workbench, click: File > Open SQL Script
+2. Navigate to: C:\projects\communication-web\sql\schema.sql
+3. Click "Open"
+4. The SQL script will open in a new tab
+5. Click the "Execute" button (lightning bolt icon) or press Ctrl+Shift+Enter
+6. Wait for "Success" messages in the output panel
+
+METHOD 2: Using Scripting Menu (Alternative)
+---------------------------------------------
+1. In MySQL Workbench, click: Scripting > Open Script...
+2. Navigate to: C:\projects\communication-web\sql\schema.sql
+3. Click "Open"
+4. Click "Execute" button (lightning bolt icon)
+
+METHOD 3: Copy and Paste (Simple)
+----------------------------------
+1. Open the file: C:\projects\communication-web\sql\schema.sql in Notepad
+2. Copy all the SQL code
+3. In MySQL Workbench, click on a new SQL tab (or File > New Query Tab)
+4. Paste the SQL code
+5. Click "Execute" button (lightning bolt icon)
+
+================================================================================
+WHAT THE SCRIPT DOES:
+================================================================================
+- Creates database: communication_db
+- Creates tables: users, messages
+- Inserts sample users:
+  * admin / admin123
+  * officer1 / officer123
+  * officer2 / officer123
+
+================================================================================
+AFTER RUNNING:
+================================================================================
+1. Click the "Refresh" icon in the left sidebar
+2. You should see "communication_db" in the database list
+3. Expand it to see "users" and "messages" tables
+4. Then proceed to deploy the application
+
+================================================================================
+

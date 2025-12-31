@@ -1,0 +1,45 @@
+================================================================================
+APACHE TOMCAT SETUP GUIDE
+================================================================================
+
+OPTION 1: ZIP FILE (Recommended for Development)
+-------------------------------------------------
+1. Download: "64-bit Windows zip" from Tomcat download page
+2. Extract to: C:\apache-tomcat-9.0.xx (or any location)
+3. Start Tomcat:
+   - Navigate to: C:\apache-tomcat-9.0.xx\bin
+   - Double-click: startup.bat
+   - OR run in PowerShell: .\startup.bat
+4. Verify: Open browser to http://localhost:8080
+5. Stop Tomcat: Run shutdown.bat from bin folder
+
+OPTION 2: MSI INSTALLER (For Windows Service)
+----------------------------------------------
+1. Download: "32-bit/64-bit Windows Service Installer"
+2. Run the MSI installer
+3. Follow installation wizard
+4. Tomcat will be installed as a Windows service
+5. Access at: http://localhost:8080
+
+IMPORTANT PATHS AFTER INSTALLATION:
+-----------------------------------
+- Tomcat Home: C:\apache-tomcat-9.0.xx (or where you extracted/installed)
+- Webapps folder: TOMCAT_HOME\webapps\
+- Lib folder: TOMCAT_HOME\lib\ (contains servlet-api.jar)
+- Bin folder: TOMCAT_HOME\bin\ (startup.bat, shutdown.bat)
+
+VERIFY TOMCAT IS RUNNING:
+-------------------------
+1. Open browser: http://localhost:8080
+2. You should see the Tomcat welcome page
+3. If port 8080 is busy, check:
+   - netstat -an | findstr :8080
+   - Change port in: TOMCAT_HOME\conf\server.xml
+
+NEXT STEP AFTER TOMCAT:
+-----------------------
+Once Tomcat is running, you can deploy the communication-web application
+using the deploy.ps1 script.
+
+================================================================================
+
